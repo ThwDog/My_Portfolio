@@ -6,7 +6,8 @@ const data = [{
     name : 'ItsAKnightTimes', // name of project
     img : knight, 
     dis : '2D Rogue like game Art style pixel', //description
-    link : 'https://github.com/ThwDog/GP_ItsAKnightTimes'
+    link : 'https://github.com/ThwDog/GP_ItsAKnightTimes',
+    youtube : ''
 } ,
 {
     status : 'Game jam 2023',
@@ -51,9 +52,11 @@ const data = [{
 {
     status : 'Uni Project',
     name : 'DonkeyKong_Project', // name of project
-    img : '', 
+    img : 'https://img.itch.zone/aW1nLzE4ODYyNjIzLnBuZw==/347x500/oqwLyJ.png', 
     dis : 'This game is made for Game Project 1 class Task is to made old game look new', //description
-    link : 'https://github.com/ThwDog/DonkeyKong_Project'
+    link : 'https://github.com/ThwDog/DonkeyKong_Project',
+    youtube : 'https://www.youtube.com/embed/a8er-xcG3dI?si=8EoKxWrLBET6CZhe',
+    itch : 'https://thwdog.itch.io/donkey-kong-remake-university-project'
 }
 ,
 {
@@ -67,9 +70,11 @@ const data = [{
 {
     status : 'Uni Project',
     name : 'light to the ashes ', // name of project
-    img : '', 
+    img : 'https://img.itch.zone/aW1nLzE4ODQ4Nzc4LnBuZw==/347x500/KNACmK.png', 
     dis : '3D Top down game that mix with 2D art style *This is current project*', //description
-    link : 'https://github.com/ThwDog/GameProject2_Year3'
+    link : 'https://github.com/ThwDog/GameProject2_Year3',
+    youtube : 'https://www.youtube.com/embed/pz4bCJTtc5w?si=4R4XLKKPs-LtMh-X',
+    itch : 'https://thwdog.itch.io/light-to-the-ashes'
 }
 ];
 

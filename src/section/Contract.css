@@ -6,8 +6,20 @@ section .contact
     background-color:#1E201E;
     font-size: 48px;
 }
+.Header-Contract{
+    font-size: 50px;
+    font-weight: 600;
+    color:#ffffff;
+    margin-left: 2dvb;
+}
 
 .contact
 {
     height:1050px;
+}
+
+#contact{
+    padding-left: 50px;
+    color:#ffffff;
+    font-size: 25px;
 }

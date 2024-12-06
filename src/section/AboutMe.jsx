@@ -31,6 +31,7 @@ function AboutMe() {
 
                             <div class="tab-title">
                                 <p className={`tab-links ${activeTab === 'skill' ? 'active-link' : ''}`}        onClick={() => handleTabClick('skill')}>Skill</p>
+                                <p className={`tab-links ${activeTab === 'Language' ? 'active-link' : ''}`}    onClick={() => handleTabClick('Language')}>Language</p>
                                 <p className={`tab-links ${activeTab === 'experience' ? 'active-link' : ''}`}   onClick={() => handleTabClick('experience')}>Experience</p>
                                 <p className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`}    onClick={() => handleTabClick('education')}>Education</p>
                             </div>
@@ -48,6 +49,11 @@ function AboutMe() {
                             <div className={`tab-con ${activeTab === 'education' ? 'active-tab' : ''}`} id="education"> {/*Education */}
                                 <ul>
                                     <li><span>Education</span><br /> Education</li>
+                                </ul>
+                            </div>
+                            <div className={`tab-con ${activeTab === 'Language' ? 'active-tab' : ''}`} id="Language"> {/*Education */}
+                                <ul>
+                                    <li><span>Language</span><br /> Language</li>
                                 </ul>
                             </div>
                         </div>

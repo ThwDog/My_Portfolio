@@ -24,8 +24,8 @@ div .github-Calender{
   color: white;
   font: small-caps bold 24px/1 sans-serif;
   position: absolute;
-  margin-left: 850px;
-  margin-top: 650px;
+  /* margin-left: 850px; */
+  top: 750px;
 }
 div .calender-BG{
   background: rgba(0, 0, 0, 0.52);

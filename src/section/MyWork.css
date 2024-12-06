@@ -6,6 +6,13 @@ section .mywork
     background-color:#1E201E;
     font-size: 48px;
 }
+/* .Header-MyWork{
+    font-size: 55px;
+    font-weight: 600;
+    color:#ffffff;
+    margin-left: 5%;
+} */
+
 .mywork
 {
     margin: 0 auto;

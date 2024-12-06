@@ -46,14 +46,15 @@ function Header() {
               <br></br>
               <p> Game Developer</p>
               <h1>HI , I'm<span> Mean</span> from Thailand
-              <br/>I'm current study on <span>Game Development</span> and interesting in <span>VFX</span></h1>
-
-              <div className='github-Calender'>
-                  <div className='calender-BG' />
-                  <GitHubCalendar username="thwdog" />
-              </div>
+              <br/>I'm current study on <span>Unity Game Development</span>interesting in <span>VFX</span> and <span> AI </span></h1>
             </div>
           </div>
+
+          <div className='github-Calender'>
+                  <div className='calender-BG' />
+                  <GitHubCalendar username="thwdog" />
+          </div>
+
           <div class="header-bottom-link">
             <WrapItem>
               <Tooltip hasArrow  label='GITHUB' bg="0" fontSize='15'  placement='top' color='white' height='15'>

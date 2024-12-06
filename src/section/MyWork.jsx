@@ -28,13 +28,11 @@ var settings = {
     prevArrow: <Arrow />
   };
 
-
-
 function MyWork(){
     return(
         <>
         <section class="mywork">
-            <h1>MY WORK</h1>
+            {/* <h1 className='Header-MyWork'>MY WORK</h1> */}
             <br/>
             <div className='slide-Card'>
                 <div className='card'>
@@ -44,7 +42,12 @@ function MyWork(){
                             <div className='card-Img'>
                                 <div className='card-status'>
                                 <h1>status : {d.status}</h1>
-                                    <img className='card-img-in' src={d.img} />
+                                    {d.youtube ? <iframe width="560" height="315" src={d.youtube} title="YouTube video player" 
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                                    : 
+                                    <img className='card-img-in' src={d.img} />}
+                                    
                                 </div>
                             </div>
 
@@ -52,7 +55,10 @@ function MyWork(){
                                 <p className='card-Name'><h1>{d.name}</h1></p>
                                 <p className='card-disc'>{d.dis}</p>
                                 <a href={d.link}  target="_blank" >
-                                    <button className='card-button'>LINK</button>
+                                    <button className='card-button'>GIT</button>
+                                </a>
+                                <a href={d.itch}  target="_blank" >
+                                    {d.itch ? <button className='card-button'>ITCH.IO</button> : null}
                                 </a>
                             </div>
                         </div>
