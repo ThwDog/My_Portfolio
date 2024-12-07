@@ -6,7 +6,7 @@ function Contract(){
             <h1 className='Header-Contract'>Contract</h1>
             <br/> 
             <div id='contact'>
-                Email
+                Email : Thanadul.sod.work@gmail.com
             </div>
             
         

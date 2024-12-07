@@ -82,3 +82,15 @@ section .aboutme
 .tab-con.active-tab{
     display: block;
 }
+.space-info-head{
+  margin: 15px 15px 0;
+  color: rgb(222, 243, 103);
+}
+.highLight{
+    color: rgb(137, 236, 253);
+}
+.space-info{
+    margin: 15px 20px 0;
+    font: 1.2rem "Fira Sans", sans-serif;
+    color: rgb(255, 255, 255);
+}
