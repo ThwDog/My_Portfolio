@@ -63,7 +63,7 @@ function AboutMe() {
                             <div class="about_col_2">
                                 <h1 class="sub-title">About me</h1>
                                 <br/>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                <p class = "sub-dis">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna
                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute

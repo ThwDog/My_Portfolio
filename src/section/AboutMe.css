@@ -39,6 +39,9 @@ section .aboutme
     font-weight: 600;
     color:#ffffff;
 }
+.sub-dis{
+    overflow-wrap: anywhere;
+}
 .tab-title
 {
     display: flex;
@@ -46,7 +49,7 @@ section .aboutme
 }
 .tab-links
 {
-    margin-right: 50px;
+    margin-right: 20px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;

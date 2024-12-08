@@ -41,8 +41,8 @@ function MyWork(){
                         <div className='card-Inside'>
                             <div className='card-Img'>
                                 <div className='card-status'>
-                                <h1>status : {d.status}</h1>
-                                    {d.youtube ? <iframe width="560" height="315" src={d.youtube} title="YouTube video player" 
+                                {/* <h1>status : {d.status}</h1> */}
+                                    {d.youtube ? <iframe className='card-img-in-youtube' src={d.youtube} title="YouTube video player" 
                                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
                                     : 

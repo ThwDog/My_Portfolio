@@ -21,11 +21,12 @@ html {
 
 div .github-Calender{
   z-index: 1;
+  width: 56%;
   color: white;
   font: small-caps bold 24px/1 sans-serif;
-  position: absolute;
+  position: sticky;
   /* margin-left: 850px; */
-  top: 750px;
+  top: 500px;
 }
 div .calender-BG{
   background: rgba(0, 0, 0, 0.52);
@@ -134,3 +135,4 @@ nav ul li a:hover::after {
   height: 60px;
   object-fit: cover;
 }
+

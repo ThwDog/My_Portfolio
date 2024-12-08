@@ -16,6 +16,7 @@ section .contact
 .contact
 {
     height:1050px;
+    white-space: pre-line;
 }
 
 #contact{

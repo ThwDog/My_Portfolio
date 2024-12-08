@@ -6,22 +6,16 @@ section .mywork
     background-color:#1E201E;
     font-size: 48px;
 }
-/* .Header-MyWork{
-    font-size: 55px;
-    font-weight: 600;
-    color:#ffffff;
-    margin-left: 5%;
-} */
-
 .mywork
 {
     margin: 0 auto;
 }
 div .slide-Card{
+    overflow: hidden;
     margin: auto;
 }
 div .card{
-    width: 189dvh;
+    width: 250dvh;
 }
 div .card-Inside{
     height:70dvh;
@@ -58,15 +52,17 @@ div .card-dis{
     align-items: center;
     flex-direction: column;
     row-gap: 4;
+    overflow-wrap: break-word;
 }
 div .card-Name{
     color: rgba(248, 248, 248, 0.822);    
     
-    font-size: 40px;
+    font-size: 50%;
+    overflow-wrap: break-word;
 }
 div .card-disc{
     text-align: center;
-    margin-top: 10px;
+    margin: 10px;
     color: rgba(248, 248, 248, 0.822);      
     font-size: 20px;
 }
@@ -102,6 +98,17 @@ a{
     width: 100%;
     margin-top: 20px;
     border-radius: 15px;
+    overflow: hidden;
+}
+.card-img-in-youtube{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50dvb;
+    height: 30dvb;
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .slick-slide > div{
     margin: 0 10px;
