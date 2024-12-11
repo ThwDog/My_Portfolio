@@ -3,7 +3,6 @@ import AnimateSkillBar from '/src/Function/AnimateSkillBar.jsx';
 import photo from "../Image/MyPhoto.jpg";
 import React, { useEffect, useState } from 'react';
 
-
 function skill() {
     return (
         <>
@@ -37,6 +36,37 @@ function skill() {
                 especially the math and lighting stuff.
                 </div>
             </div>
+        </>
+    );
+}
+
+function language() {
+    return (
+        <>
+            <div class="space-info-head">
+                <span> - Thai : <span class = "highLight"> Native </span> </span>
+            </div>
+            <div class="space-info-head">
+                <span> - English : <span class = "highLight"> Basic - Medium </span> </span>
+            </div>
+            <div class="space-info-head">
+                <span> - Spanish : <span class = "highLight"> Basic </span> </span>
+            </div>
+        </>
+    );
+}
+
+function experience() {
+    return (
+        <>
+            <div class="space-info-head">
+                <span> - Revenue Department : <span class = "highLight"> 2020 </span> </span>
+                <div class="space-info">
+                I had a great internship experience at the Revenue Department. 
+                I gained hands-on experience in warehouse management, using Excel to streamline processes and improve efficiency.
+                </div>
+            </div>
+            
         </>
     );
 }
@@ -85,6 +115,7 @@ function AboutMe() {
                                 <div className={`tab-con ${activeTab === 'experience' ? 'active-tab' : ''}`} id="experience"> {/*Experience */}
                                     <ul>
                                         {/* <li><span>Experience</span><br /> Experience</li> */}
+                                        {experience()}
                                     </ul>
                                 </div>
                                 <div className={`tab-con ${activeTab === 'education' ? 'active-tab' : ''}`} id="education"> {/*Education */}
@@ -95,6 +126,7 @@ function AboutMe() {
                                 <div className={`tab-con ${activeTab === 'Language' ? 'active-tab' : ''}`} id="Language"> {/*Education */}
                                     <ul>
                                         {/* <li><span>Language</span><br /> Language</li> */}
+                                        {language()}
                                     </ul>
                                 </div>
                             </div>
