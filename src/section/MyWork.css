@@ -10,6 +10,10 @@ section .mywork
 {
     margin: 0 auto;
 }
+.Header-MyWork {
+    color: rgba(255, 255, 255, 0.822);    
+    margin-right: 25px;
+}
 div .slide-Card{
     overflow: hidden;
     margin: auto;

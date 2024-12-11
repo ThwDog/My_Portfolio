@@ -55,7 +55,7 @@ const data = [{
     img : 'https://img.itch.zone/aW1nLzE4ODYyNjIzLnBuZw==/347x500/oqwLyJ.png', 
     dis : 'This game is made for Game Project 1 class Task is to made old game look new', //description
     link : 'https://github.com/ThwDog/DonkeyKong_Project',
-    youtube : 'https://www.youtube.com/embed/a8er-xcG3dI?si=8EoKxWrLBET6CZhe',
+    youtube : 'a8er-xcG3dI',
     itch : 'https://thwdog.itch.io/donkey-kong-remake-university-project'
 }
 ,
@@ -73,7 +73,7 @@ const data = [{
     img : 'https://img.itch.zone/aW1nLzE4ODQ4Nzc4LnBuZw==/347x500/KNACmK.png', 
     dis : '3D Top down game that mix with 2D art style *This is current project*', //description
     link : 'https://github.com/ThwDog/GameProject2_Year3',
-    youtube : 'https://www.youtube.com/embed/pz4bCJTtc5w?si=4R4XLKKPs-LtMh-X',
+    youtube : 'pz4bCJTtc5w',
     itch : 'https://thwdog.itch.io/light-to-the-ashes'
 }
 ];

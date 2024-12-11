@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { data } from '../Data.jsx'
+import YouTubeVideo  from "/src/Function/YoutubeLoad.jsx";
 
 function Arrow(props) {
     const { className, style, onClick } = props;
@@ -18,11 +19,11 @@ function Arrow(props) {
 
 var settings = {
     // centerPadding: "100px",
-    centerMode: false,
+    centerMode: true,
     swipeToSlide: true,
     infinite: true,
     slidesToShow: 4,
-    focusOnSelect: true,
+    focusOnSelect: false,
     speed: 100,
     nextArrow: <Arrow />,
     prevArrow: <Arrow />
@@ -31,8 +32,11 @@ var settings = {
 function MyWork(){
     return(
         <>
+         <script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
         <section class="mywork">
-            {/* <h1 className='Header-MyWork'>MY WORK</h1> */}
+            {/* <h1 className='Header-MyWork'>
+                Swap to see more work
+            </h1> */}
             <br/>
             <div className='slide-Card'>
                 <div className='card'>
@@ -42,9 +46,11 @@ function MyWork(){
                             <div className='card-Img'>
                                 <div className='card-status'>
                                 {/* <h1>status : {d.status}</h1> */}
-                                    {d.youtube ? <iframe className='card-img-in-youtube' src={d.youtube} title="YouTube video player" 
-                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                                    {d.youtube ? 
+                                    // <iframe className='card-img-in-youtube' src={d.youtube} title="YouTube video player" 
+                                    // frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    // referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                                    <YouTubeVideo videoId={d.youtube} title="Hi" />
                                     : 
                                     <img className='card-img-in' src={d.img} />}
                                     
