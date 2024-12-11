@@ -17,13 +17,13 @@ function Arrow(props) {
   }
 
 var settings = {
-    centerPadding: "60px",
-    centerMode: true,
+    // centerPadding: "100px",
+    centerMode: false,
     swipeToSlide: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     focusOnSelect: true,
-    speed: 500,
+    speed: 100,
     nextArrow: <Arrow />,
     prevArrow: <Arrow />
   };
