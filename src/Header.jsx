@@ -1,46 +1,15 @@
 import './Header.css';
 import React, { useEffect, useState ,useRef } from 'react';
 import { Box, Tooltip, WrapItem } from '@chakra-ui/react';
-import AboutMe from './section/AboutMe';
-import MyWork from './section/MyWork';
-import Contract from './section/Contract';
 import GitHubCalendar from 'react-github-calendar';
 
 function Header() {
-  // ref from other jsx file
-  const homeRef = useRef(null);
-  const aboutMeRef = useRef(null);
-  const myWorkRef = useRef(null);
-  const contactRef = useRef(null);
-
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-      setIsScrolled(scrollPosition > 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-  };
-  }, []);
 
   return (
-      <><div id='header'>
+      <>
+      <div id='header'>
         <div className='container'>
-          <nav className={`nav ${isScrolled ? 'scrolled' : ''}`}>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#about-me" onClick={() => aboutMeRef.current.scrollIntoView({ behavior: 'smooth' })}>About me</a></li>
-              <li><a href="#my-work" onClick={() => myWorkRef.current.scrollIntoView({ behavior: 'smooth' })}>My work</a></li>
-              <li><a href="#contact" onClick={() => contactRef.current.scrollIntoView({ behavior: 'smooth' })}>Contact</a></li>
-            </ul>
-          </nav>
+          
           <div class="header-text">
             <div>
               <br></br>
@@ -50,10 +19,7 @@ function Header() {
             </div>
           </div>
 
-          <div className='github-Calender'>
-                  <div className='calender-BG' />
-                  <GitHubCalendar username="thwdog" />
-          </div>
+          
 
           <div class="header-bottom-link">
             <WrapItem>
@@ -80,20 +46,11 @@ function Header() {
             </WrapItem>     
           </div>
         </div>
-        
+          <div className='github-Calender'>
+            <div className='calender-BG' />
+            <GitHubCalendar username="thwdog" />
+          </div>
       </div>
-
-      <section id="about-me" ref={aboutMeRef} style={{height:"auto", backgroundColor:"#1E201E"}}>
-        <AboutMe />
-      </section>
-
-      <section id="my-work" ref={myWorkRef} style={{height:"auto", backgroundColor:"#1E201E"}}>
-        <MyWork />
-      </section>
-      
-      <section id="contact" ref={contactRef} style={{height:"auto", backgroundColor:"#1E201E"}}>
-        <Contract />
-      </section>
       </>
   );
 }

@@ -9,12 +9,16 @@ section .mywork
 .mywork
 {
     margin: 0 auto;
+    background-color: rgb(42, 42, 43);
+    height: 100vh;
+
 }
 .Header-MyWork {
     color: rgba(255, 255, 255, 0.822);    
     margin-right: 25px;
 }
 div .slide-Card{
+    padding-top: 10%;
     overflow: hidden;
     margin: auto;
 }

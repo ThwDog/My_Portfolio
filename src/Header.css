@@ -11,33 +11,35 @@ html {
 
 #header {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-image: url(Image/MyPhoto.jpg);
   /* background pic */
   background-size: cover;
   background-position: center;
-  background-color:"#1E201E";
+}
+
+.header{
+  background-color: rgb(42, 42, 43);
 }
 
 div .github-Calender{
+  margin: 29% 10%;
   z-index: 1;
-  width: 56%;
+  width: 45%;
   color: white;
   font: small-caps bold 24px/1 sans-serif;
   position: sticky;
   /* margin-left: 850px; */
-  top: 500px;
 }
 div .calender-BG{
   background: rgba(0, 0, 0, 0.52);
-  border-radius: 16px;
+  border-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 
   z-index: -1;
   position: absolute;
-  border-radius: 15px;
   width: 100%;
   height: 100%;
 }
@@ -46,54 +48,6 @@ div .calender-BG{
   font: small-caps bold 24px/1 sans-serif;
   font-size: large;
   padding: 10px 10%;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-
-  background-color: rgb(42, 42, 43);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  transition: background-color 0.5s ease-in-out;
-}
-
-.scrolled {
-  background-color: rgba(42, 42, 43, 0.5);
-}
-
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
-}
-
-/* text menu */
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-  position: relative;
-}
-
-nav ul li a::after {
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #ffffff;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
 }
 
 .header-text {
@@ -126,7 +80,7 @@ nav ul li a:hover::after {
 
 .header-bottom-link {
   position: absolute;
-  top: 73%;
+  top: 92%;
 }
 
 .header-bottom-link img {

@@ -81,7 +81,7 @@ function AboutMe() {
 
     return (
         <>
-            <section class="aboutme">
+            <div class="aboutme">
                 <div id="about">
                     <div class="container">
                         <div class="row">
@@ -130,7 +130,7 @@ function AboutMe() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     );
 }
