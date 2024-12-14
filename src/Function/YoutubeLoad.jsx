@@ -21,6 +21,8 @@ const YouTubeVideo = ({ videoId, title }) => {
 
   return (
     <div>
+      <div div style={{ textAlign: 'center', color: 'white', fontSize: '20px',fontFamily: 'Arial, sans-serif' }}>
+        Click to play video</div>
       {videoLoaded ? (
         <iframe
           src={`https://www.youtube.com/embed/${videoId}`}
@@ -29,8 +31,8 @@ const YouTubeVideo = ({ videoId, title }) => {
           allowFullScreen
           style={{
             position: 'absolute',
-            top: 50,
-            left: 40,
+            top: 0,
+            left: 0,
             width: '50dvb',
             height: '30dvb',
           }}
@@ -48,8 +50,6 @@ const YouTubeVideo = ({ videoId, title }) => {
             borderRadius: '15px'
           }}
             />
-
-        click to play video
         </h1>
       )}
     </div>
