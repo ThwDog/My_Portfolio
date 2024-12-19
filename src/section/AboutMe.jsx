@@ -71,6 +71,32 @@ function experience() {
     );
 }
 
+function education() {
+    return (
+        <>
+            <div class="space-info-head">
+                <span> - Horwang School : <span class = "highLight"> 2016-2019 </span> </span>
+                <div class="space-info">
+                I was a student at Horwang School from 2016 to 2019, graduating in 2019
+                </div>
+            </div>
+            <div class="space-info-head">
+                <span> - Chitlada Technology Institute : <span class = "highLight"> 2019-2021 </span> </span>
+                <div class="space-info">
+                I graduated from Chitlada Technology Institute in 2021 with a Vocational Certificate in IT. 
+                During my studies from 2019 to 2021, I developed a strong passion for coding.
+                </div>
+            </div>
+            <div class="space-info-head">
+                <span> - Rangsit University : <span class = "highLight"> 2022-Now </span> </span>
+                <div class="space-info">
+                I am currently pursuing a degree in Computer Game and Esports at Rangsit University.
+                </div>
+            </div>
+        </>
+    );
+}
+
 function AboutMe() {
     const [activeTab, setActiveTab] = useState('skill');
 
@@ -93,7 +119,10 @@ function AboutMe() {
                             <div class="about_col_2">
                                 <h1 class="sub-title">About me</h1>
                                 <br/>
-                                <p class = "sub-dis">Lorem ipsum dolor sit amet, 
+                                <p class = "sub-dis">I've always been fascinated by how games work. Watching my older sister play sparked my interest. 
+                                    I'd wonder how NPCs moved or how certain game mechanics were created. I couldn't play myself, so I'd watch and learn. 
+                                    This early exposure ignited my passion for game development. I want to create games that people can lose themselves in, 
+                                    just like I did as a kid.
                                 </p>
 
                                 <div class="tab-title">
@@ -118,7 +147,8 @@ function AboutMe() {
                                 <div className={`tab-con ${activeTab === 'education' ? 'active-tab' : ''}`} id="education"> {/*Education */}
                                     <ul>
                                         {/* <li><span>Education</span><br /> Education</li> */}
-                                    </ul>
+                                        {education()}
+                                        </ul>
                                 </div>
                                 <div className={`tab-con ${activeTab === 'Language' ? 'active-tab' : ''}`} id="Language"> {/*Education */}
                                     <ul>

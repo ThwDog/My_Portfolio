@@ -14,7 +14,7 @@ function Header() {
             <div>
               <br></br>
               <p> Game Developer</p>
-              <h1>HI , I'm<span> Mean</span> from Thailand
+              <h1>HI , I'm<span> Thanadul Sodsangsook</span> from Thailand
               <br/>I'm current study on <span>Unity Game Development</span>interesting in <span>VFX</span> and <span> AI </span></h1>
             </div>
           </div>
