@@ -2,12 +2,17 @@ import React from 'react';
 import './Grid.css'; // Import your CSS file
 import YouTubeVideo  from "./YoutubeLoad.jsx";
 
-const GridCard = ({ status, name, img, dis, link, youtube, itch }) => {
+const GridCard = ({ status, name, img ,video, dis, link, youtube, itch }) => {
   return (
     <div className="slide-Card">
       <div className="card">
         <div className="card-Inside">
           <div className="card-Img">
+            {video ?<video autoPlay muted loop preload className="card-video-in"> 
+              <source src={video} type="video/mp4"/>
+            </video>
+            : 
+            null}
             {youtube ? (
               <div className="card-img-in-youtube">
                 <YouTubeVideo videoId={youtube}/>

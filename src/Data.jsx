@@ -1,10 +1,14 @@
-import knight from "./Image/ItAKnightTime.gif";
-import mod from "./Image/MODGame.gif";
+import knight from "./Image/ItAKnightTime.mp4";
+import mod from "./Image/MODGame.mp4";
+import name from "./Image/NameLessBoy.mp4";
+import escape from "./Image/EscapeFromTu.mp4";
+import mail from "./Image/MailMan.mp4";
+import turtle from "./Image/TurtleFly.mp4";
 
 const data = [{
     status : 'Uni Project',
     name : 'ItsAKnightTimes', // name of project
-    img : knight, 
+    video : knight,
     dis : '2D Rogue like game Art style pixel', //description
     link : 'https://github.com/ThwDog/GP_ItsAKnightTimes',
     youtube : ''
@@ -12,7 +16,7 @@ const data = [{
 {
     status : 'Game jam 2023',
     name : 'MOD_Gam', // name of project
-    img : mod, 
+    video : mod,
     dis : '2D platform game', //description
     link : 'https://github.com/ThwDog/Mod_Game'
 } 
@@ -28,7 +32,7 @@ const data = [{
 {
     status : 'Uni Project',
     name : 'NameLessBoy', // name of project
-    img : '', 
+    video : name,
     dis : '2D turn base game', //description
     link : 'https://github.com/ThwDog/NameLessBoy'
 } 
@@ -36,7 +40,7 @@ const data = [{
 {
     status : 'Uni Project',
     name : 'EscapeFromTu', // name of project
-    img : '', 
+    video : escape,
     dis : '2D top down shooting game', //description
     link : 'https://github.com/ThwDog/EscapeFromTu'
 } 
@@ -62,7 +66,7 @@ const data = [{
 {
     status : 'Uni Project',
     name : 'Mailman', // name of project
-    img : '', 
+    video : mail,
     dis : '3D first person game', //description
     link : 'https://github.com/ThwDog/Mailman'
 }
@@ -71,10 +75,19 @@ const data = [{
     status : 'Uni Project',
     name : 'light to the ashes ', // name of project
     img : 'https://img.itch.zone/aW1nLzE4ODQ4Nzc4LnBuZw==/347x500/KNACmK.png', 
-    dis : '3D Top down game that mix with 2D art style *This is current project*', //description
+    dis : '3D Top down game that mix with 2D art style', //description
     link : 'https://github.com/ThwDog/GameProject2_Year3',
     youtube : 'pz4bCJTtc5w',
     itch : 'https://thwdog.itch.io/light-to-the-ashes'
+}
+,
+{
+    status : 'Uni Project',
+    name : 'TurtleFlySystem_Visitor_Facade', // name of project
+    video : turtle,
+    dis : 'This project is inspired by a vending machine called "เตาบิน". I`m using game programming patterns such as Visitor and Facade.', //description
+    link : 'https://github.com/ThwDog/TurtleFlySystem_Visitor_Facade',
+    // youtube : 'pz4bCJTtc5w',
 }
 ];
 
