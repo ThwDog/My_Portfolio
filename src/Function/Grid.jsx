@@ -1,5 +1,5 @@
 import React from 'react';
-import './Grid.css'; // Import your CSS file
+import './Grid.css';
 import YouTubeVideo  from "./YoutubeLoad.jsx";
 
 const GridCard = ({ status, name, img ,video, dis, link, youtube, itch }) => {
@@ -8,7 +8,7 @@ const GridCard = ({ status, name, img ,video, dis, link, youtube, itch }) => {
       <div className="card">
         <div className="card-Inside">
           <div className="card-Img">
-            {video ?<video controls className="card-video-in"> 
+            {video ?<video autoPlay muted loop className="card-video-in"> 
               <source src={video} type="video/mp4"/>
             </video>
             : 
@@ -41,13 +41,17 @@ const GridCard = ({ status, name, img ,video, dis, link, youtube, itch }) => {
 };
 
 const Grid = ({ data }) => {
+  const gridItems = React.useMemo(() => {
+    return data.map((item, index) => (
+      <div key={index} className="grid-column">
+        <GridCard key={item.name} {...item} />
+      </div>
+    ));
+  }, [data]);
+
   return (
     <div className="grid-container">
-      {data.map((item, index) => (
-        <div key={index} className="grid-column">
-          <GridCard key={item.name} {...item} />
-        </div>
-      ))}
+      {gridItems}
     </div>
   );
 };
