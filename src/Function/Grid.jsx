@@ -1,17 +1,15 @@
 import React, { useMemo, useRef } from 'react';
-import './Grid.css'; // Import your CSS file
-import YouTubeVideo from "./YoutubeLoad.jsx"; // Assuming YouTubeVideo is optimized
+import './Grid.css';
+import YouTubeVideo from "./YoutubeLoad.jsx"; 
 
 const GridCard = ({ status, name, img, video, dis, link, youtube, itch }) => {
-  const videoRef = useRef(null); // Create a ref for the video element
-
   return (
     <div className="slide-Card">
       <div className="card">
         <div className="card-Inside">
           <div className="card-Img">
             {video ? (
-              <video ref={videoRef} controls className="card-video-in" >
+              <video autoPlay loop className="card-video-in" >
                 <source src={video} type="video/mp4" />
               </video>
             ) : youtube ? (

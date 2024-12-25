@@ -16,20 +16,12 @@ div .card{
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-div .card-Inside{
-    height:100%;
-    /* background: rgba(255, 255, 255, 0.342); */
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 .card-Inside div{
     /* background: rgba(255, 255, 255, 0.342); */
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.288);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
@@ -94,7 +86,6 @@ div .card-disc{
     align-items: center;
     flex-direction: column;
     background: rgba(17, 17, 17, 0.9);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.9px);
     -webkit-backdrop-filter: blur(10.9px);
 
@@ -134,6 +125,8 @@ a{
 
     margin-left: 5.5%;
     border-radius: 15px;
+    align-items: center;
+    display: flex;
 }
 
 @media (max-width: 1024px) {
