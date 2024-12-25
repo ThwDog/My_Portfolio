@@ -14,8 +14,8 @@ function Header() {
             <div>
               <br></br>
               <p> Game Developer</p>
-              <h1>HI , I'm<span> Thanadul Sodsangsook</span> from Thailand
-              <br/>I'm current study on <span>Unity Game Development</span>interesting in <span>VFX</span> and <span> AI </span></h1>
+              <h1>Hi, I'm <span> Thanadul Sodsangsook </span> from Thailand. 
+              <br/> I'm a coder currently studying Unity Game Development. I'm interested in VFX and AI.</h1>
             </div>
           </div>
 
@@ -25,7 +25,8 @@ function Header() {
             <WrapItem>
               <Tooltip hasArrow  label='GITHUB' bg="0" fontSize='15'  placement='top' color='white' height='15'>
                   <a href="https://github.com/ThwDog" target="_blank">
-                    <img src="https://avatars.githubusercontent.com/u/93073193?v=4" loading="lazy" ></img>
+                    {/* <img src="https://avatars.githubusercontent.com/u/93073193?v=4" loading="lazy" ></img> */}
+                    <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" loading="lazy" ></img>
                   </a>
               </Tooltip>
               <Tooltip hasArrow  label='LEETCODE' bg="0" fontSize='15'  placement='top' color='white'>

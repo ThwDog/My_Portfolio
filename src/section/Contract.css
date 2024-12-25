@@ -1,28 +1,79 @@
-section .contact
-{
-    width : 100%;
-    height: 300px;
-    font: 1.2rem "Fira Sans", sans-serif;
-    background-color:#1E201E;
-    font-size: 48px;
-}
-.Header-Contract{
-    padding-top: 5%;
-    font-size: 50px;
-    font-weight: 600;
-    color:#ffffff;
-    margin-left: 2dvb;
-}
-
-.contact
-{
-    height:1050px;
+section {
+    height:  100vh;
     white-space: pre-line;
+    width: 100%;
+    font: 1.2rem "Fira Sans", sans-serif;
     background-color: rgb(42, 42, 43);
+    font-size: 48px;
+    text-align: center;
 }
 
-#contact{
-    padding-left: 50px;
-    color:#ffffff;
+.Header-Contract {
+    display: flex;
+    padding-top: 2%;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 2px 3px #696969;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.Header-img{
+    display: flex;
+    align-items: flex-end;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.Header-img img{
+    border-radius: 10px;
+}
+
+#contact {
+    color: #ffffff;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Responsive height based on viewport */
+    height: min-content;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    /* Allow text wrapping if content overflows */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) if content overflows */
+}
+
+.button:hover {
+    background-color: #b8b8b8;
+}
+
+.button img {
+    margin-right: 10px;
+    width: 45px;
+    height: 40px;
+}
+
+.button span {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
 }

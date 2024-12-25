@@ -1,37 +1,36 @@
 import './AboutMe.css'
-import AnimateSkillBar from '/src/Function/AnimateSkillBar.jsx';
 import photo from "../Image/MyPhoto.jpg";
 import React, { useEffect, useState } from 'react';
 
 function skill() {
     return (
         <>
-            <div class="space-info-head">
-                <span> - Unity C# : <span class = "highLight"> medium </span> </span>
-                <div class="space-info">
+            <div className="space-info-head">
+                <span> - Unity C# : <span className = "highLight"> medium </span> </span>
+                <div className="space-info">
                     I'm passionate about game development and have 3 years of experience using Unity and C# to create immersive 3D and 2D platformers and first-person shooters.
                 </div>
             </div>
 
-            <div class="space-info-head">
-                <span>- HTML And Css : <span class = "highLight"> Basic </span></span>
-                <div class ="space-info">
+            <div className="space-info-head">
+                <span>- HTML And Css : <span className = "highLight"> Basic </span></span>
+                <div className ="space-info">
                     I'm a beginner in web development, and this portfolio is a testament to my passion for learning. 
                     I'm always eager to explore new technologies and techniques.
                 </div>
             </div>
 
-            <div class="space-info-head">
-                <span>- AI : <span class = "highLight"> Basic </span></span>
-                <div class ="space-info">
+            <div className="space-info-head">
+                <span>- AI : <span className = "highLight"> Basic </span></span>
+                <div className ="space-info">
                     I've been diving into the world of AI, both in the classroom and through my own projects. 
                     I'm excited to learn more and apply my skills to new challenges.
                 </div>
             </div>
 
-            <div class="space-info-head">
-                <span>- Shader , HLSL : <span class = "highLight"> Basic </span></span>
-                <div class ="space-info">
+            <div className="space-info-head">
+                <span>- Shader , HLSL : <span className = "highLight"> Basic </span></span>
+                <div className ="space-info">
                 I'm not much of an artist, but I've got a handle on the basics of shader programming, 
                 especially the math and lighting stuff.
                 </div>
@@ -107,25 +106,25 @@ function AboutMe() {
 
     return (
         <>
-            <div class="aboutme">
+            <div className="aboutme">
                 <div id="about">
-                    <div class="container">
-                        <div class="row">
+                    <div className="container">
+                        <div className="row">
                             {/* Left col */}
-                            <div class="about_col_1">
+                            <div className="about_col_1">
                                 <img src={photo}></img>
 
                             </div>
-                            <div class="about_col_2">
-                                <h1 class="sub-title">About me</h1>
+                            <div className="about_col_2">
+                                <h1 className="sub-title">About me</h1>
                                 <br/>
-                                <p class = "sub-dis">I've always been fascinated by how games work. Watching my older sister play sparked my interest. 
+                                <p className = "sub-dis">I've always been fascinated by how games work. Watching my older sister play sparked my interest. 
                                     I'd wonder how NPCs moved or how certain game mechanics were created. I couldn't play myself, so I'd watch and learn. 
                                     This early exposure ignited my passion for game development. I want to create games that people can lose themselves in, 
                                     just like I did as a kid.
                                 </p>
 
-                                <div class="tab-title">
+                                <div className="tab-title">
                                     <p className={`tab-links ${activeTab === 'skill' ? 'active-link' : ''}`} onClick={() => handleTabClick('skill')}>Skill</p>
                                     <p className={`tab-links ${activeTab === 'Language' ? 'active-link' : ''}`} onClick={() => handleTabClick('Language')}>Language</p>
                                     <p className={`tab-links ${activeTab === 'experience' ? 'active-link' : ''}`} onClick={() => handleTabClick('experience')}>Experience</p>

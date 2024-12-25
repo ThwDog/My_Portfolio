@@ -67,6 +67,10 @@
 .tab-links.active-link::after{
     width: 100%;
 }
+.tab-links:hover{
+    background: #79797979;
+    border-radius: 5px;
+}
 
 .tab-con{
     display: none;

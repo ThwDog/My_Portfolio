@@ -8,7 +8,7 @@ const GridCard = ({ status, name, img ,video, dis, link, youtube, itch }) => {
       <div className="card">
         <div className="card-Inside">
           <div className="card-Img">
-            {video ?<video autoPlay muted loop preload className="card-video-in"> 
+            {video ?<video controls className="card-video-in"> 
               <source src={video} type="video/mp4"/>
             </video>
             : 
