@@ -23,7 +23,8 @@ html {
 }
 
 div .github-Calender{
-  margin: 29% 10%;
+  top: 75vh; /* Use vh for top position */
+  left: 10vw; /* Use vw for left position */
   z-index: 1;
   width: 45%;
   color: white;

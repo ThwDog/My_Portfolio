@@ -51,6 +51,9 @@ function language() {
             <div class="space-info-head">
                 <span> - Spanish : <span class = "highLight"> Basic </span> </span>
             </div>
+            <div class="space-info-head">
+                <span> - Japan : <span class = "highLight"> In Progress </span> </span>
+            </div>
         </>
     );
 }

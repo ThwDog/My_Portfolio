@@ -1,6 +1,7 @@
 import './Contract.css'
 import { Box, Tooltip, Wrap, WrapItem } from '@chakra-ui/react';
 import photo from "../Image/MyPhoto.jpg";
+import resumeFile from "../File/thanadul_resume.pdf";
 
 function Contract(){
     return(
@@ -20,11 +21,19 @@ function Contract(){
                 </div>
                 <button className="button">
                     <a href="https://github.com/ThwDog" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.png" alt="Email icon"/>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.png" alt="git icon"/>
+                        <span className="button-Name">Github</span>
                     </a>
-                    <span>Github</span>
                 </button>
             </div>
+
+                <button className="button">
+                    <a href= {resumeFile} download>
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/page-file-icon.png" alt="file icon"/>
+                        <span className="button-Name"> Download Resume </span>
+                    </a>
+                </button>
+                
         </section> 
     );
 }

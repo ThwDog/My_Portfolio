@@ -43,7 +43,7 @@ section {
     /* Responsive height based on viewport */
     height: min-content;
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px;
 }
 
 .button {
@@ -76,4 +76,9 @@ section {
     color: black;
     font-weight: bold;
     font-size: 20px;
+}
+
+.button-Name{
+    bottom: 1vh;
+    position: relative;
 }
