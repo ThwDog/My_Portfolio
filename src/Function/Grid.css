@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 600px);
+    grid-template-columns: repeat(auto-fit, 60dvb);
 } 
 .grid-column {
     width: 50dvb;

@@ -4,6 +4,8 @@ import name from "./Image/NameLessBoy.mp4";
 import escape from "./Image/EscapeFromTu.mp4";
 import mail from "./Image/MailMan.mp4";
 import turtle from "./Image/TurtleFly.mp4";
+import mid from "./Image/MidTermPro2023.mp4";
+import swepp from "./Image/SweppGirl.mp4";
 
 const data = [{
     status : 'Uni Project',
@@ -17,14 +19,14 @@ const data = [{
     status : 'Game jam 2023',
     name : 'MOD_Gam', // name of project
     video : mod,
-    dis : '2D platform game', //description
+    dis : 'I created a 2D platform game for Global Game Jam 2023.', //description
     link : 'https://github.com/ThwDog/Mod_Game'
 } 
 ,
 {
     status : 'Uni Project',
     name : 'MidTermPro2023', // name of project
-    img : '', 
+    video : mid, 
     dis : '2D top down shooting game', //description
     link : 'https://github.com/ThwDog/MidTermPro2023-1_Survive'
 } 
@@ -48,8 +50,8 @@ const data = [{
 {
     status : 'GlobalJam2024',
     name : 'Swepp Girl', // name of project
-    img : '', 
-    dis : 'I have cooperated in this game, my work is coding.', //description
+    video : swepp, 
+    dis : 'I collaborated on this game. I made it for the Global Game Jam 2024, and my role was coding.', //description
     link : 'https://globalgamejam.org/games/2024/swepp-girl-8'
 }
 ,
