@@ -13,6 +13,13 @@ function skill() {
             </div>
 
             <div className="space-info-head">
+                <span> - Design pattern : <span className = "highLight"> medium </span> </span>
+                <div className="space-info">
+                I know a few basic design patterns in C#, like Singleton, Factory, Visitor, Observer, and FSM.
+                </div>
+            </div>
+
+            <div className="space-info-head">
                 <span>- HTML And Css : <span className = "highLight"> Basic </span></span>
                 <div className ="space-info">
                     I'm a beginner in web development, and this portfolio is a testament to my passion for learning. 
