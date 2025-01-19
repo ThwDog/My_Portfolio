@@ -55,9 +55,11 @@ div .card-dis{
 }
 div .card-Name{
     color: rgba(248, 248, 248, 0.822);    
-    
     font-size: 25px;
-    overflow-wrap: break-word;
+}
+.card-Name{
+    width: auto;
+    overflow-wrap: anywhere;
 }
 div .card-disc{
     text-align: center;
@@ -131,9 +133,18 @@ a{
 
 @media (max-width: 1024px) {
     .grid-container {
-        grid-template-columns: repeat(auto-fit, 500px);
+        grid-template-columns: repeat(auto-fit, 60dvb);
     }
     .grid-column {
         width: 0dvb;
+    }
+}
+
+@media (max-width: 750px) {
+    div .card{
+        width: 45dvb; /* Adjust the width as needed */
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, 70dvb);
     }
 }
