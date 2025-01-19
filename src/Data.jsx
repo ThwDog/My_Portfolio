@@ -79,7 +79,7 @@ const data = [
     ,
     {
         status: 'Uni Project',
-        name: 'EscapeFromTu', // name of project
+        name: 'EscapeFromSpiderT', // name of project
         video: escape,
         dis: '2D top down shooting game', //description
         link: 'https://github.com/ThwDog/EscapeFromTu'
