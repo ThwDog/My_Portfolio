@@ -1,11 +1,11 @@
-section {
-    height:  100vh;
-    white-space: pre-line;
-    width: 100%;
-    font: 1.2rem "Fira Sans", sans-serif;
+.contact {
+    position: fixed; /* Use 'fixed' for better control */
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    z-index: -1; /* Ensure it's behind other content */
     background-color: rgb(42, 42, 43);
-    font-size: 48px;
-    text-align: center;
 }
 
 .Header-Contract {
@@ -32,6 +32,8 @@ section {
 
 .Header-img img{
     border-radius: 10px;
+    width: auto;
+    height: 25dvh;
 }
 
 #contact {

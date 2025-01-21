@@ -5,7 +5,7 @@ import resumeFile from "../File/thanadul_resume.pdf";
 
 function Contract(){
     return(
-        <section className="contact"><br/>
+        <div className="contact"><br/>
             <h1 className='Header-Contract'>Contract</h1>
             <br/>
                 <div className="Header-img">
@@ -25,16 +25,18 @@ function Contract(){
                         <span className="button-Name">Github</span>
                     </a>
                 </button>
-            </div>
-
+                
                 <button className="button">
                     <a href= {resumeFile} download>
                         <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/page-file-icon.png" alt="file icon"/>
                         <span className="button-Name"> Download Resume </span>
                     </a>
                 </button>
+            </div>
+
                 
-        </section> 
+                
+        </div> 
     );
 }
 

@@ -1,58 +1,57 @@
 import './Header.css';
-import React, { useEffect, useState ,useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Box, Tooltip, WrapItem } from '@chakra-ui/react';
 import GitHubCalendar from 'react-github-calendar';
+import YouTubeVideo from "./Function/YoutubeLoad.jsx";
 
 function Header() {
 
   return (
-      <>
+    <>
       <div id='header'>
         <div className='container'>
-          
+
           <div class="header-text">
             <div>
               <br></br>
               <p> Game Developer</p>
-              <h1>Hi, I'm <span> Thanadul Sodsangsook </span> from Thailand. 
-              <br/> I'm a coder currently studying Unity Game Development. I'm interested in VFX and AI.</h1>
+              <h1>Hi, I'm <span> Thanadul Sodsangsook </span> from Thailand.
+                <br /> I'm a coder currently studying Unity Game Development. I'm interested in VFX and AI.</h1>
             </div>
           </div>
 
-          
-
           <div class="header-bottom-link">
             <WrapItem>
-              <Tooltip hasArrow  label='GITHUB' bg="0" fontSize='15'  placement='top' color='white' height='15'>
-                  <a href="https://github.com/ThwDog" target="_blank">
-                    {/* <img src="https://avatars.githubusercontent.com/u/93073193?v=4" loading="lazy" ></img> */}
-                    <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" loading="lazy" ></img>
-                  </a>
+              <Tooltip hasArrow label='GITHUB' bg="0" fontSize='15' placement='top' color='white' height='15'>
+                <a href="https://github.com/ThwDog" target="_blank">
+                  {/* <img src="https://avatars.githubusercontent.com/u/93073193?v=4" loading="lazy" ></img> */}
+                  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" loading="lazy" ></img>
+                </a>
               </Tooltip>
-              <Tooltip hasArrow  label='LEETCODE' bg="0" fontSize='15'  placement='top' color='white'>
-                  <a href="https://leetcode.com/u/ThwDog/" target="_blank">
-                    <img src="https://miro.medium.com/v2/resize:fit:1020/0*xJCLQQRZv3XFMUd1" loading="lazy"></img>
-                  </a>
+              <Tooltip hasArrow label='LEETCODE' bg="0" fontSize='15' placement='top' color='white'>
+                <a href="https://leetcode.com/u/ThwDog/" target="_blank">
+                  <img src="https://miro.medium.com/v2/resize:fit:1020/0*xJCLQQRZv3XFMUd1" loading="lazy"></img>
+                </a>
               </Tooltip>
-              <Tooltip hasArrow  label='YT01' bg="0" fontSize='15'  placement='top' color='white'>
+              <Tooltip hasArrow label='YT01' bg="0" fontSize='15' placement='top' color='white'>
                 <a href="https://www.youtube.com/@td_gd2765/videos" target="_blank">
                   <img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" loading="lazy"></img>
                 </a>
-              </Tooltip>    
-              <Tooltip hasArrow  label='YT02' bg="0" fontSize='15'  placement='top' color='white'>
+              </Tooltip>
+              <Tooltip hasArrow label='YT02' bg="0" fontSize='15' placement='top' color='white'>
                 <a href="https://www.youtube.com/@ThwDog_Work" target="_blank">
                   <img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" loading="lazy"></img>
                 </a>
-              </Tooltip>  
-            </WrapItem>     
+              </Tooltip>
+            </WrapItem>
           </div>
         </div>
-          <div className='github-Calender'>
-            <div className='calender-BG' />
-            <GitHubCalendar username="thwdog" />
-          </div>
+        <div className='github-Calender'>
+          <div className='calender-BG' />
+          <GitHubCalendar username="thwdog" />
+        </div>
       </div>
-      </>
+    </>
   );
 }
 
