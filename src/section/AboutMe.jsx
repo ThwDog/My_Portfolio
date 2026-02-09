@@ -13,6 +13,13 @@ function skill() {
             </div>
 
             <div className="space-info-head">
+                <span> - Godot GDScript : <span className = "highLight"> basic </span> </span>
+                <div className="space-info">
+                    I once use Godot Engine to develop a 3D game using GDScript.
+                </div>
+            </div>
+
+            <div className="space-info-head">
                 <span> - Design pattern : <span className = "highLight"> medium </span> </span>
                 <div className="space-info">
                 I know a few basic design patterns in C#like Singleton, Visitor, Observer, and FSM.
