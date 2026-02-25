@@ -1,17 +1,16 @@
 .contact {
-    position: fixed; /* Use 'fixed' for better control */
-    top: 0;
-    left: 0;
-    width: 100vw; 
-    height: 100vh;
-    z-index: -1; /* Ensure it's behind other content */
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    z-index: 0;
     background-color: rgb(42, 42, 43);
 }
 
 .Header-Contract {
     display: flex;
     padding-top: 2%;
-    font-size: 70px;
+    font-size: clamp(2rem, 8vw, 4.3rem);
     font-weight: 600;
     text-shadow: 2px 3px #696969;
     color: #ffffff;
@@ -42,10 +41,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
     /* Responsive height based on viewport */
     height: min-content;
     margin: 0;
-    padding: 0 0 20px;
+    padding: 0 1rem 20px;
 }
 
 .button {
@@ -58,7 +59,7 @@
     cursor: pointer;
     margin-right: 15px;
     /* Allow text wrapping if content overflows */
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     /* Add ellipsis (...) if content overflows */
@@ -83,4 +84,23 @@
 .button-Name{
     bottom: 1vh;
     position: relative;
+}
+
+@media (max-width: 700px) {
+    #contact {
+        font-size: 18px;
+        align-items: stretch;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .button span {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
 }

@@ -11,7 +11,9 @@ html {
 
 #header {
   width: 100%;
-  height: 100vh;
+  min-height: 100svh;
+  height: auto;
+  position: relative;
   background-image: url(Image/MyPhoto.jpg);
   /* background pic */
   background-size: cover;
@@ -25,11 +27,19 @@ html {
 div .github-Calender{
   left: 10vw; /* Use vw for left position */
   z-index: 1;
-  width: 45%;
+  width: min(45vw, 720px);
+  min-width: 360px;
   color: white;
   font: small-caps bold 24px/1 sans-serif;
   position: absolute;
+  bottom: 8rem;
   /* margin-left: 850px; */
+}
+
+.github-Calender svg,
+.github-Calender .react-activity-calendar {
+  width: 100%;
+  height: auto;
 }
 div .calender-BG{
   background: rgba(0, 0, 0, 0.52);
@@ -48,12 +58,15 @@ div .calender-BG{
   font: small-caps bold 24px/1 sans-serif;
   font-size: large;
   padding: 10px 10%;
+  min-height: 100svh;
+  position: relative;
 }
 
 .header-text {
   margin: 30px 0px;
   font: small-caps bold 24px/1 sans-serif;
-  margin-right: 30%;
+  margin-right: 0;
+  max-width: 900px;
   font-size: 30px;
   color: #ffffff;
 }
@@ -80,7 +93,8 @@ div .calender-BG{
 
 .header-bottom-link {
   position: absolute;
-  top: 92%;
+  bottom: 2rem;
+  left: 10%;
 }
 
 .header-bottom-link img {
@@ -89,5 +103,55 @@ div .calender-BG{
   height: 60px;
   object-fit: cover;
   margin-right: 5px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 80px 6% 20px;
+  }
+
+  .header-text {
+    font-size: 24px;
+  }
+
+  .header-text p {
+    font-size: 24px;
+  }
+
+  .header-text h1,
+  .header-text h1 span {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    line-height: 1.3;
+  }
+
+  div .github-Calender {
+    position: absolute;
+    width: min(92vw, 520px);
+    min-width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7.5rem;
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  div .calender-BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-bottom-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .header-bottom-link img {
+    width: 52px;
+    height: 52px;
+  }
 }
 

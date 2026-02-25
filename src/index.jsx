@@ -8,6 +8,7 @@ import Header from './Header';
 import AboutMe from './section/AboutMe';
 import MyWork from './section/MyWork';
 import Contract from './section/Contract';
+import WorkDetail from './section/WorkDetail';
 import LayOut from './LayOut';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +20,7 @@ root.render(
             <Route path="/" element={<Header />} />
             <Route path="/AboutMe" element={<AboutMe />} />
             <Route path="/MyWork" element={<MyWork />} />
+            <Route path="/MyWork/:workId" element={<WorkDetail />} />
             <Route path="/Contract" element={<Contract />} />
           </Route>      
         </Routes>

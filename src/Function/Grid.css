@@ -1,9 +1,11 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 60dvb);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
+    justify-content: center;
+    gap: 24px;
 } 
 .grid-column {
-    width: 50dvb;
+    width: 100%;
 }
 
 div .slide-Card{
@@ -12,11 +14,23 @@ div .slide-Card{
     /* background-color:#1E201E; */
 }
 div .card{
-    width: 60dvb; /* Adjust the width as needed */
+    width: 100%;
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+div .card:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
 }
 .card-Inside div{
     /* background: rgba(255, 255, 255, 0.342); */
@@ -33,7 +47,7 @@ div .card-status{
     color: rgba(248, 248, 248, 0.822);    
 }
 div .card-Img{
-    height: 40dvb;
+    height: 250px;
 
     background: rgba(31, 31, 31, 0.87);
     border-radius: 15px;
@@ -46,29 +60,41 @@ div .card-Img{
     align-items: center;
 }
 div .card-dis{
-    margin-top: 10px;
+    margin-top: 12px;
+    padding: 14px 14px 16px;
+    border-radius: 14px;
+    background: rgba(19, 19, 19, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 6px 16px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 4;
+    row-gap: 8px;
     overflow-wrap: break-word;
 }
 div .card-Name{
     color: rgba(248, 248, 248, 0.822);    
-    font-size: 25px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 .card-Name{
-    width: auto;
+    width: 100%;
     overflow-wrap: anywhere;
 }
 div .card-disc{
     text-align: center;
-    margin: 10px;
+    margin: 2px 0 0;
     color: rgba(248, 248, 248, 0.822);      
-    font-size: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.95;
 }
 .card-button{
-    margin-top: 20%;
+    margin-top: 10px;
     width: 100%;
     
     display: flex;
@@ -79,9 +105,8 @@ div .card-disc{
 }
 
 .card-buttons{
-    width: 100px;
     text-decoration: none;
-    margin-top: 20%;
+    margin-top: 0;
     width: 100%;
     
     display: flex;
@@ -95,6 +120,7 @@ div .card-disc{
     color: white;
     padding: 15px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .card-buttons:hover{
@@ -108,7 +134,11 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    max-width: 100%;
+    max-height: 230px;
+    width: auto;
+    height: auto;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -116,16 +146,17 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50dvb;
-    height: 30dvb;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
     border-radius: 15px;
     overflow: hidden;
 }
 .card-video-in{
-    width: 90%;
+    width: 100%;
     height: 100%;
-
-    margin-left: 5.5%;
+    object-fit: contain;
     border-radius: 15px;
     align-items: center;
     display: flex;
@@ -133,18 +164,31 @@ a{
 
 @media (max-width: 1024px) {
     .grid-container {
-        grid-template-columns: repeat(auto-fit, 60dvb);
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
     .grid-column {
-        width: 0dvb;
+        width: 100%;
+    }
+
+    div .card-Img {
+        height: 220px;
     }
 }
 
 @media (max-width: 750px) {
-    div .card{
-        width: 45dvb; /* Adjust the width as needed */
-    }
     .grid-container {
-        grid-template-columns: repeat(auto-fit, 70dvb);
+        grid-template-columns: 1fr;
+    }
+
+    div .card-Img {
+        min-height: 200px;
+    }
+
+    div .card-Name {
+        font-size: 1.2rem;
+    }
+
+    div .card-disc {
+        font-size: 0.95rem;
     }
 }

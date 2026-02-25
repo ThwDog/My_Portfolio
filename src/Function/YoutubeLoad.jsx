@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const YouTubeVideo = ({ videoId, title }) => {
-  const [videoLoaded, setVideoLoaded] = useState(false);
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1&vq=hd1080`;
 
   useEffect(() => {
     // Preconnect to YouTube's resources for faster loading
@@ -11,48 +11,33 @@ const YouTubeVideo = ({ videoId, title }) => {
       'https://www.google.com',
     ];
     links.forEach((link) => {
-      const linkElement = document.createElement('link');
-      linkElement.rel = 'preconnect';
-      linkElement.crossOrigin = 'anonymous';
-      linkElement.href = link;
-      document.head.appendChild(linkElement);
+      if (!document.querySelector(`link[rel="preconnect"][href="${link}"]`)) {
+        const linkElement = document.createElement('link');
+        linkElement.rel = 'preconnect';
+        linkElement.crossOrigin = 'anonymous';
+        linkElement.href = link;
+        document.head.appendChild(linkElement);
+      }
     });
   }, []);
 
   return (
-    <div>
-      
-      {videoLoaded ? (
-        <iframe
-          src={`https://www.youtube.com/embed/${videoId}`}
-          title={title}
+    <div style={{ width: '100%', height: '100%' }}>
+      <iframe
+          src={embedUrl}
+          title={title || 'YouTube video'}
           frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
           style={{
             top: 0,
             left: 0,
-            width: '50dvb',
-            height: '30dvb',
+            width: '100%',
+            height: '100%',
+            borderRadius: '10px',
           }}
         />
-      ) : (
-        
-        <h1>
-          <div div style={{ textAlign: 'center', color: 'white', fontSize: '20px',fontFamily: 'Arial, sans-serif' }}>
-          Click to play video</div>
-        <img
-          src={`https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`}
-          alt={`YouTube Thumbnail for ${title}`}
-          onClick={() => setVideoLoaded(true)}
-          style={{
-            height: "30dvb",
-            width: "50dvb",
-            top: -150,
-            borderRadius: '15px'
-          }}
-            />
-        </h1>
-      )}
     </div>
   );
 };
